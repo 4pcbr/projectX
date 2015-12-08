@@ -16,4 +16,10 @@ Log: Another attempt to fix the links problem. It seems fixQualifiedLibraryPaths
 not compatible with the recent raspberrian release. Pushed some fixed sed
 rewrite rules. make is in progress.
 
+Something uPnP related:
+    http://www.zeroconf.org/
+    http://www.upnp.org/
+    http://stackoverflow.com/questions/2304566/erlang-neighbour-search
+    https://code.google.com/p/nodefinder/
+
 ================================================================================
