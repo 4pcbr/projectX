@@ -107,4 +107,20 @@ Scheme #2
 | | └------------------------┘ | |
 | └----------------------------┘ |
 └--------------------------------┘
+
+paneld might implement some REST API in order to unify the client lib code.
+
+Some ideas on the distributed model:
+
+Playouts might work with no centralized management server and coordinate themselves.
+
+Playouts might run auto-discovery services like zeroconf and discover each other.
+
+The content might be also distributed and be replicated as much as needed.
+
+In this case playouts do the content exchange based on the information from the
+neighbours. This info is being delivered with gossips.
+
+Every node keeps in the memory the state of the content.
+
 ================================================================================
