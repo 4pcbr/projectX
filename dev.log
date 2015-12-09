@@ -47,4 +47,14 @@ Log: Some more attempts to configure QT creator.
 
 R* is booting properly and starts X11 up on the boot.
 
+It appears my macos gcc-4.7-linaro-rpi-gnueabihf is broken, looking
+for some alternatives.
+
+Virtialization on macos: https://github.com/psema4/pine/wiki/Installing-QEMU-on-OS-X
+
+An attempt to install gcc-4.2.
+
+http://www.cnx-software.com/2011/10/18/using-raspberry-pi-as-an-internet-kiosk/
+http://www.cnx-software.com/2011/10/18/raspberry-pi-emulator-in-ubuntu-with-qemu/
+
 ================================================================================
