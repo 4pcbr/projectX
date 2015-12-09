@@ -22,4 +22,29 @@ Something uPnP related:
     http://stackoverflow.com/questions/2304566/erlang-neighbour-search
     https://code.google.com/p/nodefinder/
 
+qtbase finally built. I also built webkit, but the original folder was empty,
+so I simply cloned the repo into qt5 folder:
+git clone git://code.qt.io/qt/qtwebkit.git
+
+WebKit requires sqlite so one has to export the lib explicitly:
+export SQLITE3SRCDIR=~/opt/qt5/qtbase/src/3rdparty/sqlite
+
+it also needs an explicit rootfolder env:
+export PKG_CONFIG_LIBDIR=/mnt/rasp-pi-rootfs/usr/lib/pkgconfig
+
+Some packages were missing:
+sudo apt-get install gperf bison flex
+
+then launched the helper script:
+./Tools/Scripts/build-webkit --qmake=/usr/local/qt5pi/bin/qmake --qt --release --no-webgl
+Node the qmake path -- if it's not provided the script will use the system qmake
+instead.
+================================================================================
+
+Date: 2015-12-09
+
+Log: Some more attempts to configure QT creator.
+
+R* is booting properly and starts X11 up on the boot.
+
 ================================================================================
