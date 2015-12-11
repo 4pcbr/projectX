@@ -124,3 +124,13 @@ neighbours. This info is being delivered with gossips.
 Every node keeps in the memory the state of the content.
 
 ================================================================================
+
+Date: 2015-12-11
+
+Log: mounting rootfs on macos
+
+Mount the img with finder, then:
+sudo fuse-ext2 /dev/disk3s2 /mnt/rasp-pi-rootfs/ -o rw+
+
+
+================================================================================
