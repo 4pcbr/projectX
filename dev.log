@@ -132,5 +132,6 @@ Log: mounting rootfs on macos
 Mount the img with finder, then:
 sudo fuse-ext2 /dev/disk3s2 /mnt/rasp-pi-rootfs/ -o rw+
 
+lib32-compatible toolchain: http://gnuarmeclipse.github.io/toolchain/install/
 
 ================================================================================
